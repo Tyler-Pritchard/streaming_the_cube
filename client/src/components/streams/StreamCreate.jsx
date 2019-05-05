@@ -1,4 +1,5 @@
 import React from "react";
+import { Field, reduxForm } from "redux-form";
 
 class StreamCreate extends React.Component {
   render() {
@@ -6,4 +7,4 @@ class StreamCreate extends React.Component {
   }
 }
 
-export default StreamCreate;
+export default reduxForm()(StreamCreate);
