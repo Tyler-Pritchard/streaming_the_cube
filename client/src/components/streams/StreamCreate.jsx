@@ -7,4 +7,6 @@ class StreamCreate extends React.Component {
   }
 }
 
-export default reduxForm()(StreamCreate);
+export default reduxForm({
+  form: "streamCreate"
+})(StreamCreate);
