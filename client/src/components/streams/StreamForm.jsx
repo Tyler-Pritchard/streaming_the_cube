@@ -1,7 +1,9 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
+import { connect } from "react-redux";
+import { createStream } from "../../actions";
 
-class StreamForm extends React.Component {
+class StreamCreate extends React.Component {
   renderError({ error, touched }) {
     if (touched && error) {
       return (
@@ -14,6 +16,7 @@ class StreamForm extends React.Component {
 
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+
     return (
       <div className={className}>
         <label>{label}</label>
@@ -24,7 +27,7 @@ class StreamForm extends React.Component {
   };
 
   onSubmit = formValues => {
-    this.props.onSubmit(formValues);
+    this.props.createStream(formValues);
   };
 
   render() {
@@ -47,19 +50,21 @@ class StreamForm extends React.Component {
 
 const validate = formValues => {
   const errors = {};
-
   if (!formValues.title) {
     errors.title = "You must enter a title";
   }
-
   if (!formValues.description) {
-    errors.description = "You must enter a description";
+    errors.title = "You must enter a description";
   }
-
   return errors;
 };
 
-export default reduxForm({
-  form: "streamForm",
+const formWrapped = reduxForm({
+  form: "streamCreate",
   validate
-})(StreamForm);
+})(StreamCreate);
+
+export default connect(
+  null,
+  { createStream }
+)(formWrapped);
