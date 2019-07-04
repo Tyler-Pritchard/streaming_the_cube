@@ -14,6 +14,7 @@ class StreamForm extends React.Component {
 
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
+
     return (
       <div className={className}>
         <label>{label}</label>
@@ -47,15 +48,12 @@ class StreamForm extends React.Component {
 
 const validate = formValues => {
   const errors = {};
-
   if (!formValues.title) {
     errors.title = "You must enter a title";
   }
-
   if (!formValues.description) {
-    errors.description = "You must enter a description";
+    errors.title = "You must enter a description";
   }
-
   return errors;
 };
 
