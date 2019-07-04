@@ -1,5 +1,6 @@
 {
-  "streams": [{
+  "streams": [
+    {
       "title": "Muthafukkin Streem",
       "description": "My description",
       "id": 8
@@ -14,6 +15,12 @@
       "description": "there",
       "userId": "110169609846225568617",
       "id": 10
+    },
+    {
+      "title": "some kinda wonderful",
+      "description": "Refactor",
+      "userId": "110169609846225568617",
+      "id": 11
     }
   ]
 }
