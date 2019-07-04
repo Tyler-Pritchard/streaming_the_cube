@@ -15,7 +15,9 @@ const store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />,
+    <App />
   </Provider>,
   document.querySelector("#root")
 );
+
+//const NodeMediaServer = require('node-media-server');
