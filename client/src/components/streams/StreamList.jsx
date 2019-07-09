@@ -5,7 +5,7 @@ import { fetchStreams } from "../../actions";
 
 class StreamList extends React.Component {
   componentDidMount() {
-    this.props.fetchStreams();
+    this.props.fetchStreams(this.props.match.params.id);
   }
 
   renderAdmin(stream) {
