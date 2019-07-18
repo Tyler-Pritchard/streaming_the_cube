@@ -18,10 +18,10 @@ dependencies:
     redux-thunk: ^2.3.0
     
     from /api
-      ```npm start```
+      npm start
       
     from /client
-      ```npm start```
+      npm start
       
     from /rtmp
-      ```npm start```
+      npm start
