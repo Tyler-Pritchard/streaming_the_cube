@@ -1,6 +1,9 @@
 {
   "name": "rtmpserver",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.8.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
