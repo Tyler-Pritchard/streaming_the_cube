@@ -1,0 +1,19 @@
+{
+  "name": "streaming_the_cube",
+  "version": "1.0.0",
+  "description": "Watch and chat through this video streaming application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tyler-Pritchard/streaming_the_cube.git"
+  },
+  "author": "Tyler Pritchard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tyler-Pritchard/streaming_the_cube/issues"
+  },
+  "homepage": "https://github.com/Tyler-Pritchard/streaming_the_cube#readme"
+}
